@@ -1,0 +1,29 @@
+@use 'base/generales';
+
+@use 'components/header';
+@use 'components/contenedor-info';
+@use 'components/footer';
+
+@use 'pages/index';
+@use 'pages/servicios';
+@use 'pages/clientes';
+@use 'pages/form';
+
+/*Qwerty*/
+@media (min-width:320px){
+    main{
+        background-color: #e8e8e8;
+    }
+}
+
+@media (min-width:568px){
+    main{
+        background-color: #e2e2e2;
+    }
+}
+
+@media (min-width:1080px){
+    main{
+        background-color: white;
+    }
+}

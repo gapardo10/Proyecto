@@ -1,0 +1,14 @@
+@mixin contenido($display, $wrap, $items, $a_content, $j_content){
+    display: $display;
+    flex-wrap: $wrap;
+    align-items: $items;
+    align-content: $a_content;
+    justify-content: $j_content;
+}
+
+@mixin form($display, $wrap, $j_content, $direction){
+    display: $display;
+    flex-wrap: $wrap;
+    justify-content: $j_content;
+    flex-direction: $direction;
+}

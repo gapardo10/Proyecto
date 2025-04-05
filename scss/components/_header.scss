@@ -1,0 +1,16 @@
+/*Header - clase para el contenedor de la marca*/
+.navbar-brand {
+    padding: 10px 20px;
+    height: 100%;
+    width: 230px;
+    position: relative;
+}
+
+/*Header - Valores para evitar desbordes*/
+.col {
+    --bs-gutter-x: 0;
+}
+
+.row {
+    --bs-gutter-x: 0;
+}

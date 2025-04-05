@@ -1,0 +1,44 @@
+@use '../base/variables' as*;
+/*Main - Contenedor de la portada principal*/
+.container-fluid {
+    --bs-gutter-x: 0;
+
+    img {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.contenedor_portada {
+    display: grid;
+}
+
+/*La bajada es la informacion de la seccion*/
+.contenedor_bajada {
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+    background-color: $color01;
+    padding: 30px 0px;
+
+    h1 {
+        font-weight: bolder;
+
+        p {
+            text-align: juatify;
+            font-size: medium;
+        }
+    }
+}
+
+/*Estilo de texto de la bajada*/
+.txt_bajada {
+    text-align: left;
+}
+
+/*Separador entre informacion dentro de la bajada*/
+.sector img {
+    width: 86px;
+    height: 25%;
+    padding: 5px 0px;
+}

@@ -1,0 +1,33 @@
+@use '../base/variables' as*;
+@use '..utilities/mixins' as*;
+
+/*Contenedor de la seccion de informacion sobre los servicios*/
+.contenedor_info02 {
+    @include contenido(flex, wrap, center, center, space-around);
+    --flex-direction: row;
+    padding: 50px 10px;
+    background-color: $color06;
+}
+
+/*Las imagenes donde se muestran los servicios tienen esta clase definida*/
+.pic-servicios {
+    width: 220px;
+    height: 100%;
+    padding: 20px 0px;
+}
+
+/*Estilos de la tarjeta y la informacion de cada servicio*/
+.card {
+    width: 18rem;
+    height: 100%;
+    margin: 5px;
+}
+
+.nombre-cliente{
+    font-weight: bolder;
+}
+
+.cargo-empresa {
+    font-weight: bolder;
+    color: $color04;
+}

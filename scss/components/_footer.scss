@@ -1,0 +1,49 @@
+/*clases definidas para el footer*/
+
+.logo {
+    img {
+        width: 150px;
+        height: 100%;
+    }
+}
+
+.top-foot {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 0px 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 20px;
+
+            li {
+                img {
+                    height: 100%;
+                    padding: 15px 0px;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+.bottom-foot {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        p {
+            color: white;
+            font-size: small;
+        }
+    }
+}

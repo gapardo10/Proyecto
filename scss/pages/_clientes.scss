@@ -1,0 +1,42 @@
+@use '../base/variables' as*;
+/*Contenedor de la seccion de informacion sobre los clientes*/
+.contenedor_info04 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
+    grid-template-areas:
+    "imagen-1 imagen-2 imagen-3"
+    "imagen-4 imagen-5 imagen-6"
+    ;
+    gap: 10px;
+    justify-content:center;
+    padding: 50px 10px;
+    background-color: $color06;
+    align-items: center;
+    align-content: center;
+}
+
+.cli1{
+    grid-area: imagen-1;
+}
+
+.cli2{
+    grid-area: imagen-2;
+}
+
+.cli3{
+    grid-area: imagen-3;
+}
+
+.cli4{
+    grid-area: imagen-4;
+}
+
+.cli5{
+    grid-area: imagen-5;
+}
+
+.cli6{
+    grid-area: imagen-6;
+}

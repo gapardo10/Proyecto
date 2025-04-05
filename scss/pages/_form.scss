@@ -1,0 +1,26 @@
+@use '../base/variables' as*;
+@use '..utilities/mixins' as*;
+
+/*Contenedor de la seccion de para el formulario de contactos*/
+
+.contenedor_info05 {
+    @include form(flex, wrap, space-around, column);
+    --flex-direction: column;
+    padding: 50px 10px;
+    background-color: $color07;
+
+    form {
+        padding: 0 20%;
+
+        button {
+            background-color: $color04;
+            border-color: $color04;
+            padding: 14px 40px;
+
+            &:hover {
+                background-color: $color03;
+                border-color: $color03;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@use '../base/variables' as*;
+@use '..utilities/mixins' as*;
+
+/*Este es el contenedor de la informacion de la seccion, ya sea una galeria de imagenes o un formulario*/
+.contenedor_info01 {
+     @include contenido(flex, wrap, center, center, space-evenly);
+    --flex-direction: row;
+    padding: 50px 10px;
+    background-color: $color06;
+}

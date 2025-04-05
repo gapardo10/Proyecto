@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Header - clase para el contenedor de la marca*/
+.navbar-brand {
+  padding: 10px 20px;
+  height: 100%;
+  width: 230px;
+  position: relative;
+}
+
+/*Header - Valores para evitar desbordes*/
+.col {
+  --bs-gutter-x: 0;
+}
+
+.row {
+  --bs-gutter-x: 0;
+}
+
+/*Este es el contenedor de la informacion de la seccion, ya sea una galeria de imagenes o un formulario*/
+.contenedor_info01 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  --flex-direction: row;
+  padding: 50px 10px;
+  background-color: #e2e2e2;
+}
+
+/*IMPORTANTE: Probe colocando mixin pero me genera error en el complicado del .css, la duda que tengo es  si se pueden trabajar dos @use al mismo tiempo y si este @include siempre debe ir en la parte interior o puede ir en la parte superior del css de la clase*/
+/*clases definidas para el footer*/
+.logo img {
+  width: 150px;
+  height: 100%;
+}
+
+.top-foot {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 0px 20px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-foot nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+.top-foot nav ul li img {
+  height: 100%;
+  padding: 15px 0px;
+  align-items: center;
+}
+
+.bottom-foot {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-foot div p {
+  color: white;
+  font-size: small;
+}
+
+/*Main - Contenedor de la portada principal*/
+.container-fluid {
+  --bs-gutter-x: 0;
+}
+.container-fluid img {
+  width: 100%;
+  text-align: center;
+}
+
+.contenedor_portada {
+  display: grid;
+}
+
+/*La bajada es la informacion de la seccion*/
+.contenedor_bajada {
+  display: grid;
+  grid-template-rows: 1fr;
+  align-items: center;
+  background-color: #f4c10e;
+  padding: 30px 0px;
+}
+.contenedor_bajada h1 {
+  font-weight: bolder;
+}
+.contenedor_bajada h1 p {
+  text-align: juatify;
+  font-size: medium;
+}
+
+/*Estilo de texto de la bajada*/
+.txt_bajada {
+  text-align: left;
+}
+
+/*Separador entre informacion dentro de la bajada*/
+.sector img {
+  width: 86px;
+  height: 25%;
+  padding: 5px 0px;
+}
+
+/*Contenedor de la seccion de informacion sobre los servicios*/
+.contenedor_info02 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  --flex-direction: row;
+  padding: 50px 10px;
+  background-color: #e2e2e2;
+}
+
+/*Las imagenes donde se muestran los servicios tienen esta clase definida*/
+.pic-servicios {
+  width: 220px;
+  height: 100%;
+  padding: 20px 0px;
+}
+
+/*Estilos de la tarjeta y la informacion de cada servicio*/
+.card {
+  width: 18rem;
+  height: 100%;
+  margin: 5px;
+}
+
+.nombre-cliente {
+  font-weight: bolder;
+}
+
+.cargo-empresa {
+  font-weight: bolder;
+  color: #bfb402;
+}
+
+/*Contenedor de la seccion de informacion sobre los clientes*/
+.contenedor_info04 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; */
+  grid-template-areas: "imagen-1 imagen-2 imagen-3" "imagen-4 imagen-5 imagen-6";
+  gap: 10px;
+  justify-content: center;
+  padding: 50px 10px;
+  background-color: #e2e2e2;
+  align-items: center;
+  align-content: center;
+}
+
+.cli1 {
+  grid-area: imagen-1;
+}
+
+.cli2 {
+  grid-area: imagen-2;
+}
+
+.cli3 {
+  grid-area: imagen-3;
+}
+
+.cli4 {
+  grid-area: imagen-4;
+}
+
+.cli5 {
+  grid-area: imagen-5;
+}
+
+.cli6 {
+  grid-area: imagen-6;
+}
+
+/*Contenedor de la seccion de para el formulario de contactos*/
+.contenedor_info05 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  --flex-direction: column;
+  padding: 50px 10px;
+  background-color: #d8d8d8;
+}
+.contenedor_info05 form {
+  padding: 0 20%;
+}
+.contenedor_info05 form button {
+  background-color: #bfb402;
+  border-color: #bfb402;
+  padding: 14px 40px;
+}
+.contenedor_info05 form button:hover {
+  background-color: #4c4c4c;
+  border-color: #4c4c4c;
+}
+
+/*Qwerty*/
+@media (min-width: 320px) {
+  main {
+    background-color: #e8e8e8;
+  }
+}
+@media (min-width: 568px) {
+  main {
+    background-color: #e2e2e2;
+  }
+}
+@media (min-width: 1080px) {
+  main {
+    background-color: white;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
